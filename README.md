@@ -28,7 +28,7 @@ building scalable backend systems, LLM-powered applications and applied ML solut
 
 Turn a YouTube video or audio/video file into a **transcript, title and summary**, plus a chat where you ask questions about what was said.
 
-English, Hinglish or offline transcription; hybrid search (vector + BM25) with reranking, measured with a retrieval benchmark and RAGAS. Deployed on AWS with sign-in, admin approval and per-user quotas.
+English, Hinglish or offline transcription; hybrid search (vector + BM25) with reranking, measured with a retrieval benchmark and RAGAS. Deployed on AWS with Google or email sign-up, an email to the admin for each new account, and per-user quotas.
 
 **[Try it live →](https://ai-video-assistant.duckdns.org)**
 
