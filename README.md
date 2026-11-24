@@ -39,11 +39,11 @@ English, Hinglish or offline transcription; hybrid search (vector + BM25) with r
 
 ### 🔬 [Multi-Agent AI Research System](https://github.com/mahim83/Multi-Agent-AI-Research-system)
 
-Four agents collaborate to research a topic: **search → scrape → write → critique**, ending with a scored report.
+Give it a topic and four steps run in turn: **search → read → write → critique**. You get a cited Markdown report, then a separate review that scores it out of 10 and lists its weaknesses.
 
-Sources are harvested from raw tool output, so citations are pages that were actually fetched — never hallucinated links.
+The writer may only cite URLs that the search and scrape tools actually returned, which cuts down invented citations.
 
-`LangChain` `Groq` `Tavily` `BeautifulSoup` `Streamlit`
+`LangChain` `OpenAI` `Tavily` `BeautifulSoup` `Streamlit`
 
 </td>
 </tr>
@@ -55,10 +55,10 @@ Sources are harvested from raw tool output, so citations are pages that were act
 
 | Project | What it does | Tech |
 |---|---|---|
-| 📄 **[Resume Analyzer](https://github.com/mahim83/resume-analyzer)** | Extracts skills and entities from a resume, then semantically matches it against any job description and flags missing skills | FastAPI, spaCy, Sentence-Transformers |
-| 🩺 **[Pneumonia Detection](https://github.com/mahim83/Pneumonia-detection-)** | Detects pneumonia from chest X-rays, comparing Custom CNN, MobileNetV2, ResNet18 and DenseNet121 — **90.87% accuracy** | TensorFlow, PyTorch, DenseNet121 |
-| 🧠 **[ADHD Classification from EEG](https://github.com/mahim83/ADHD-CLASSIFICATION-USING-EEG-SIGNALS-)** | Hybrid LSTM+CNN model classifying ADHD from 19-channel EEG across 121 subjects — **76.9% accuracy, 0.84 ROC-AUC** | LSTM, CNN, scikit-learn |
-| 📐 **[TOPSIS Package](https://github.com/mahim83/Topsis_Package)** · [PyPI](https://pypi.org/project/Topsis-Mahim-102303958/) | Published Python package implementing TOPSIS for multi-criteria decision making | Python, NumPy, Pandas |
+| 📄 **[Resume Analyzer](https://github.com/mahim83/resume-analyzer)** | Reads a PDF or DOCX resume, finds skills (~330 tracked) and names, companies and dates, then scores it 0–100 against a job description by meaning, not just keywords. Lists the missing skills and gives writing tips. REST API and web UI, 27 tests | FastAPI, spaCy, Sentence-Transformers, Docker |
+| 🩺 **[Pneumonia Detection](https://github.com/mahim83/Pneumonia-detection-)** | Classifies chest X-rays (~5,856 images) as normal or pneumonia, comparing a custom CNN, MobileNetV2, ResNet18 and DenseNet121. DenseNet121 is best: **90.87% accuracy, 0.91 F1**, 96% sensitivity | TensorFlow, Keras, PyTorch, OpenCV |
+| 🧠 **[ADHD Classification from EEG](https://github.com/mahim83/ADHD-CLASSIFICATION-USING-EEG-SIGNALS-)** | Tells ADHD from controls using 19-channel EEG from 121 subjects. Compares logistic regression, Random Forest, XGBoost and a CNN-LSTM with 5-fold cross-validation that keeps each person's data in a single fold. The CNN-LSTM is best: **76.8% accuracy, 0.859 ROC-AUC** | TensorFlow, XGBoost, scikit-learn, SciPy |
+| 📐 **[TOPSIS Package](https://github.com/mahim83/Topsis_Package)** · [PyPI](https://pypi.org/project/Topsis-Mahim-102303958/) | Ranks options against several criteria with TOPSIS (multi-criteria decision making). Published on PyPI with a `topsis` command, plus a CLI script and a Streamlit app. Reads CSV or XLSX and checks the input | Python, NumPy, Pandas, Streamlit |
 
 ---
 
@@ -76,7 +76,7 @@ Sources are harvested from raw tool output, so citations are pages that were act
 **Generative AI**
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logo=groq&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Chroma](https://img.shields.io/badge/Chroma-FF6B6B?style=flat-square)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
