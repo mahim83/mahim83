@@ -26,11 +26,13 @@ building scalable backend systems, LLM-powered applications and applied ML solut
 
 ### 🎬 [AI Video Assistant](https://github.com/mahim83/AI-Video-Assistant)
 
-Turn any YouTube video or audio file into a **transcript, structured summary and action items** — plus a chatbot you can question about its contents.
+Turn a YouTube video or audio/video file into a **transcript, title and summary**, plus a chat where you ask questions about what was said.
 
-Three switchable transcription engines, map-reduce summarisation for long recordings, and RAG-grounded answers.
+English, Hinglish or offline transcription; hybrid search (vector + BM25) with reranking, measured with a retrieval benchmark and RAGAS. Deployed on AWS with sign-in, admin approval and per-user quotas.
 
-`Deepgram` `Whisper` `Mistral` `LangChain` `Chroma` `Streamlit`
+**[Try it live →](https://ai-video-assistant.duckdns.org)**
+
+`Deepgram` `Sarvam` `Whisper` `OpenAI` `LangChain` `Chroma` `Streamlit` `Docker` `AWS`
 
 </td>
 <td width="50%" valign="top">
@@ -53,10 +55,10 @@ Sources are harvested from raw tool output, so citations are pages that were act
 
 | Project | What it does | Tech |
 |---|---|---|
-| 📄 **[Resume Analyzer](https://github.com/mahim83/resume-analyzer)** · [live demo](https://resume-analyzer-mahim.streamlit.app/) | Extracts skills and entities from a resume, then semantically matches it against any job description and flags missing skills | FastAPI, spaCy, Sentence-Transformers |
-| 🩺 **[Pneumonia Detection](https://github.com/mahim83/Pneumonia-detection-)** · [live demo](https://pneumonia-detection-mahim83.streamlit.app/) | Detects pneumonia from chest X-rays, comparing Custom CNN, MobileNetV2, ResNet18 and DenseNet121 — **90.87% accuracy** | TensorFlow, PyTorch, DenseNet121 |
+| 📄 **[Resume Analyzer](https://github.com/mahim83/resume-analyzer)** | Extracts skills and entities from a resume, then semantically matches it against any job description and flags missing skills | FastAPI, spaCy, Sentence-Transformers |
+| 🩺 **[Pneumonia Detection](https://github.com/mahim83/Pneumonia-detection-)** | Detects pneumonia from chest X-rays, comparing Custom CNN, MobileNetV2, ResNet18 and DenseNet121 — **90.87% accuracy** | TensorFlow, PyTorch, DenseNet121 |
 | 🧠 **[ADHD Classification from EEG](https://github.com/mahim83/ADHD-CLASSIFICATION-USING-EEG-SIGNALS-)** | Hybrid LSTM+CNN model classifying ADHD from 19-channel EEG across 121 subjects — **76.9% accuracy, 0.84 ROC-AUC** | LSTM, CNN, scikit-learn |
-| 📐 **[TOPSIS Package](https://github.com/mahim83/Topsis_Package)** · [PyPI](https://pypi.org/project/Topsis-Mahim-102303958/) · [live demo](https://topsispackage-mahim.streamlit.app/) | Published Python package implementing TOPSIS for multi-criteria decision making | Python, NumPy, Pandas |
+| 📐 **[TOPSIS Package](https://github.com/mahim83/Topsis_Package)** · [PyPI](https://pypi.org/project/Topsis-Mahim-102303958/) | Published Python package implementing TOPSIS for multi-criteria decision making | Python, NumPy, Pandas |
 
 ---
 
